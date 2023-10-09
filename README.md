@@ -4,7 +4,7 @@ A web application for sharing images and exploring user-generated content, built
 
 ## Demo 
 
-
+https://github.com/Shivampatel07/Social_gallary_website/assets/102176101/df2d9d9e-1030-43d2-a0ee-1f7b8bcbad8e
 
 ## Table of Contents
 
