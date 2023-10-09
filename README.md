@@ -53,7 +53,7 @@ A web application for sharing images and exploring user-generated content, built
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/social-gallery-website.git
+   git clone https://github.com/Shivampatel07/Social_gallary_website.git
 2. Install server dependencies:
    ```bash 
    cd server
