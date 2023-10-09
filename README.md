@@ -64,8 +64,6 @@ A web application for sharing images and exploring user-generated content, built
    npm install
 4. Set up your environment variables by creating a .env file in the server directory. Include your MongoDB connection string and JWT secret:
    ```bash
-   MONGO_DB_URL=your_mongodb_uri
-   HASH_PASSWORD_SALT=your_hash_password_salt
    JWT_SECRET=your_secret_key
 5. Start the server:
    ```bash
