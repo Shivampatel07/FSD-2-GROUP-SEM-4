@@ -87,3 +87,7 @@ https://github.com/Shivampatel07/Social_gallary_website/assets/102176101/df2d9d9
   3. Commit your changes: git commit -m "Add feature/fix bug"
   4. Push to your branch: git push origin feature/your-feature-name.
   5. Create a Pull Request on GitHub.
+
+# Ecommerce_user
+Client Id : b314e4b3f0d04a79bf2f0f45a2a48079
+Client secret : 71867b2be3f04077896a8e7cfd1d7b71
