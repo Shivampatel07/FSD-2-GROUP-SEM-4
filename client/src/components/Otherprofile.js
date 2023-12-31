@@ -18,7 +18,7 @@ function Otherprofile() {
           setUserData({});
         }
       });
-  }, []);
+  }, [params]);
   return (
     <div className="container mx-auto px-4 py-8 bg-[#ffffff]">
       {/* Profile Photo and Follow Button */}

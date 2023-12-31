@@ -8,7 +8,7 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [user, setUser] = useState(false);
-  const [cookies, setCookie] = useCookies(["token"]);
+  const [cookies] = useCookies(["token"]);
   useEffect(() => {
     axios
       .post("http://localhost:8080/api/auth/userdata", { token: cookies.token })
@@ -20,7 +20,7 @@ export const AuthProvider = ({ children }) => {
         }
       })
       .catch((err) => {});
-  }, [user]);
+  }, [user, cookies]);
 
   return (
     <AuthContext.Provider value={{ isLoggedIn, setIsLoggedIn, setUser, user }}>
