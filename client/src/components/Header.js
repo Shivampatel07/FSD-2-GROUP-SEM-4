@@ -27,7 +27,7 @@ function Header() {
 
   const { isLoggedIn, setIsLoggedIn, setUser, user } = useAuth();
 
-  const [cookie, setCookie] = useCookies(["connect.sid"]);
+  const [setCookie] = useCookies(["connect.sid"]);
 
   useEffect(() => {
     if (user) {
@@ -35,7 +35,7 @@ function Header() {
     } else if (!user) {
       setUser(true);
     }
-  }, []);
+  }, [user, setUser]);
 
   const handleLogout = () => {
     const expirationDate = new Date(); // Create a new Date object

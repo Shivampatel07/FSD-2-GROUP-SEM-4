@@ -7,7 +7,7 @@ import { useCookies } from "react-cookie";
 function Userprofile() {
   const { isLoggedIn } = useAuth();
   const [postData, setPostData] = useState([]);
-  const [cookies, setCookie] = useCookies(["token"]);
+  const [,setCookie] = useCookies(["token"]);
   useEffect(() => {
     axios
       .post("http://localhost:8080/api/post/getpost", {
@@ -24,7 +24,7 @@ function Userprofile() {
         }
       })
       .catch((err) => {});
-  }, []);
+  }, [isLoggedIn]);
 
   const deletePost = (id) => {
     axios

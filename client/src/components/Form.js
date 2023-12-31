@@ -9,7 +9,7 @@ function Signin() {
   const [formData, setFormData] = useState({});
   const notify = (content) => toast.error(content);
   const navigate = useNavigate();
-  const [cookies, setCookie] = useCookies(["token"]);
+  const [, setCookie] = useCookies(["token"]);
   const expirationDate = new Date(); // Create a new Date object
   expirationDate.setHours(expirationDate.getHours() + 1); // Add 1 hour
 
@@ -34,7 +34,7 @@ function Signin() {
             path: "/",
             expires: expirationDate,
           });
-
+          window.location.reload();
           navigate("/");
         }
       })
